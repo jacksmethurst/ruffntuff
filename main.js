@@ -1,2 +1,2 @@
-// give body background red
-document.body.style.backgroundColor = "red";
+// give body overflow-y: hidden;
+document.body.style.overflowY = 'hidden';
