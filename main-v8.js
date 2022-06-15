@@ -29,3 +29,15 @@ function transformScroll(event) {
 
 var element = document.scrollingElement || document.documentElement;
 element.addEventListener("wheel", transformScroll);
+
+// when .scroll-wrap-item comes into view add class .active
+document.querySelectorAll('.scroll-wrap-item').forEach(function(item) {
+	item.addEventListener('scroll', function() {
+		if (item.scrollTop > 0) {
+			item.classList.add('active');
+		} else {
+			item.classList.remove('active');
+		}
+	});
+}
+);
