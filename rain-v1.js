@@ -3,6 +3,15 @@ var canvas = document.createElement('canvas');
 canvas.id = 'canvas';
 document.body.appendChild(canvas);
 
+// add position: fixed; z-index: 9999; top: 0; left: 0; transform: rotate(11deg); height: 150vh !important; width: 100vw !important; to #canvas
+canvas.style.position = 'fixed';
+canvas.style.zIndex = '9999';
+canvas.style.top = '0';
+canvas.style.left = '0';
+canvas.style.transform = 'rotate(11deg)';
+canvas.style.height = '150vh';
+canvas.style.width = '100vw';
+
 // Rain js
 
 function dojdi() {
