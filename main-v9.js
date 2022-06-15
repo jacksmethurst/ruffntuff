@@ -30,14 +30,19 @@ function transformScroll(event) {
 var element = document.scrollingElement || document.documentElement;
 element.addEventListener("wheel", transformScroll);
 
-// when .scroll-wrap-item comes into view add class .active
-document.querySelectorAll('.scroll-wrap-item').forEach(function(item) {
-	item.addEventListener('scroll', function() {
-		if (item.scrollTop > 0) {
-			item.classList.add('active');
-		} else {
-			item.classList.remove('active');
-		}
-	});
+// when .scroll-wrap-item comes into view horizontally, add class .active
+document.querySelector('ul.scroll-wrap').addEventListener('scroll', function() {
+	var scrollLeft = this.scrollLeft;
+	var scrollWidth = this.scrollWidth;
+	var clientWidth = this.clientWidth;
+	var scrollPercent = (scrollLeft / (scrollWidth - clientWidth)) * 100;
+	var scrollItems = document.querySelectorAll('.scroll-wrap-item');
+	var scrollItemCount = scrollItems.length;
+	var scrollItemWidth = 100 / scrollItemCount;
+	var scrollItemIndex = Math.floor(scrollPercent / scrollItemWidth);
+	var scrollItem = scrollItems[scrollItemIndex];
+	if (scrollItem) {
+		scrollItem.classList.add('active');
+	}
 }
 );
