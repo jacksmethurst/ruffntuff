@@ -4,8 +4,14 @@ document.body.style.overflowY = 'hidden';
 // give ul.scroll-wrap width: max-content;
 document.querySelector('ul.scroll-wrap').style.width = 'max-content';
 
+// give ul.scroll-wrap overflow: hidden;
+document.querySelector('ul.scroll-wrap').style.overflow = 'hidden';
+
 // give ul.scroll-wrap overflow-x: scroll;
 document.querySelector('ul.scroll-wrap').style.overflowX = 'scroll';
+
+// give ul.scroll-wrap display: flex;
+document.querySelector('ul.scroll-wrap').style.display = 'flex';
 
 // Scroll change to horizontal
 
