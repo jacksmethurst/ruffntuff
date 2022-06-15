@@ -13,6 +13,9 @@ document.querySelector('ul.scroll-wrap').style.overflowX = 'scroll';
 // give ul.scroll-wrap display: flex;
 document.querySelector('ul.scroll-wrap').style.display = 'flex';
 
+// hide scrollbar on ul.scroll-wrap
+document.querySelector('ul.scroll-wrap').addEventListener('wheel', transformScroll);
+
 // Scroll change to horizontal
 
 function transformScroll(event) {
