@@ -82,7 +82,7 @@ $('body').prepend(`
 			pointer-events: all;
 		}
 		
-		#team-caro-wrap.active .team-caro-card >img {
+		#team-caro-wrap.active .team-caro-card >img.caro-card-profile {
 			height: 45vh;
 			width: auto;
 			aspect-ratio: 1/1;
