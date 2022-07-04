@@ -173,6 +173,12 @@ $('body').prepend(`
 			
 		}
 		
+		@media screen and (max-height: 400px){
+			#d-3-2 {
+				right: 50vh;
+			}
+		}
+		
 	</style>
 
 `);
@@ -412,7 +418,7 @@ Promise.all(Array.from(document.images).filter(img => !img.complete).map(img => 
 	});
 
 	var tl_d_3_2 = gsap.timeline({repeat: 0, repeatDelay: 0});
-	tl_d_3_2.to("#d-3-2", {x: -200, duration: 1});
+	tl_d_3_2.to("#d-3-2", {x: -400, duration: 1});
 
 	ScrollTrigger.create({
 		trigger: sec_3,
