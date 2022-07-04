@@ -163,6 +163,14 @@ $('body').prepend(`
 			pointer-events: none;
 		}
 		
+		.ui-navigation {
+			pointer-events: none;
+		}
+		
+		.ui-navigation * {
+			pointer-events: all;
+		}
+		
 		@media screen and (max-width: 575px){
 			
 			.roadmap-info-close {
