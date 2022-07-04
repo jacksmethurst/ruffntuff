@@ -237,19 +237,19 @@ var sound_btn = $('#audio-toggle-wrap');
 
 // on window resize if window is bigger than 768px
 
-		if ($(window).width() < 768) {
-			$('#audio-toggle-wrap').hide();
-		} else {
-			$('#audio-toggle-wrap').show();
-		}
+	// 	if ($(window).width() < 768) {
+	// 		$('#audio-toggle-wrap').hide();
+	// 	} else {
+	// 		$('#audio-toggle-wrap').show();
+	// 	}
 
-	$(window).resize(function() {
-		if ($(window).width() < 768) {
-			$('#audio-toggle-wrap').hide();
-		} else {
-			$('#audio-toggle-wrap').show();
-		}
-	});
+	// $(window).resize(function() {
+	// 	if ($(window).width() < 768) {
+	// 		$('#audio-toggle-wrap').hide();
+	// 	} else {
+	// 		$('#audio-toggle-wrap').show();
+	// 	}
+	// });
 
 sound_btn.click(function(){
 	
