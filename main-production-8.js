@@ -175,7 +175,7 @@ $('body').prepend(`
 		
 		@media screen and (max-height: 400px){
 			#d-3-2 {
-				right: 50vh;
+				right: -120px;
 			}
 		}
 		
