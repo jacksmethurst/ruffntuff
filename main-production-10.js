@@ -185,6 +185,13 @@ $('body').prepend(`
 			#d-3-2 {
 				right: -120px;
 			}
+			.roadmap-info-item-desc {
+				max-width: 100%;
+			}
+			.roadmap-info-item {
+				height: 100vh;
+				overflow-y: scroll;
+			}
 		}
 		
 	</style>
