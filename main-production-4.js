@@ -82,6 +82,15 @@ $('body').prepend(`
 			pointer-events: all;
 		}
 		
+		#team-caro-wrap.active .team-caro-card >img {
+			height: 45vh;
+			width: auto;
+			aspect-ratio: 1/1;
+			margin: 0 auto;
+			max-width: 100%;
+			max-height: 300px;
+		}
+		
 		#team-caro-wrap .owl-item {
 			transform: scale(.8);
 			transition: transform .4s ease;
